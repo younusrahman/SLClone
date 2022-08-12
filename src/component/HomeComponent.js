@@ -14,7 +14,7 @@ const HomeComponent = () => {
 
 
   return (
-    <Stack  style={{  backgroundColor: "white", borderRadius:"1rem", marginTop: "3rem"}} >
+    <Stack  style={{  backgroundColor: "white", width:"70vw", borderRadius:"1rem",}} >
 
 
     <Typography
