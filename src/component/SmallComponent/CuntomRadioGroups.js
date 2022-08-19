@@ -45,12 +45,13 @@ export default function CustomRadioGroups() {
             </RadioGroup>
         </FormControl>
         <TextField
+
                 className={selectedRadioButton != "1"  ? "visible" :"invisible"}
                 id="datetime-local"
-                label="When do you want to go?"
+                label="Date Time"
                 type="datetime-local"
                 defaultValue={moment().format().substring(0, 16) }
-                sx={{width:"30VW"}}
+                sx={{minWidth:"36vw"}}
 
                 
                 

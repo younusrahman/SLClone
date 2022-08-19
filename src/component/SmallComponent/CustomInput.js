@@ -74,6 +74,7 @@ function CustomInput({ placeholder, name, width="100%",variant, singelObject, se
                
                 <FormControl sx={{width: {width} }} variant="outlined">
                     <TextField
+                        autoComplete= 'off'
                         name={name}
                         variant={variant}
                         sx={{ backgroundColor: "white", width: "100vw" }}

@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux/es/exports'
 
 
 
-export default function CustomButton({height, width, OnClick}) {
+export default function CustomButton({height, width, OnClick, marginBottom}) {
 
   const { Loading} = useSelector(state => state.Common)
  
@@ -17,7 +17,7 @@ export default function CustomButton({height, width, OnClick}) {
     
     <LoadingButton
     
-    sx={{ width:width, height:height }}
+    sx={{ width:width, height:height , marginBottom:marginBottom}}
       loadingPosition="start"
       startIcon={<SearchIcon />}
       variant="outlined"

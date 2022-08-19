@@ -20,7 +20,7 @@ export default function TravelComponent() {
  const [searchTextFrom, setsearchTextFrom] = useState("")
  const [SearchTextTo, setsearchTextTo] = useState("")
  
-
+  const SerachResult = Trip;
 
  const handelSwapeInputs = ()=>{
   
@@ -69,13 +69,27 @@ const handelSearchClick = () =>{
       
       <CollapseFilter/>
       <Stack sx={{width:"100%", display:"flex", alignItems:"center"}}>
-      <CustomButton marginBottom="1rem" width="15vw" height="3rem" justifyContent="center" OnClick={handelSearchClick}/>
+      <CustomButton marginBottom="3rem" width="50%" height="3rem" justifyContent="center" OnClick={handelSearchClick}/>
       </Stack>
 
     </Box>
-    <ShowResultComponent/>
-    {/* <ShowResultComponent/>
+   {/* <ShowResultComponent/>
+   <ShowResultComponent/>
+   <ShowResultComponent/>
+   <ShowResultComponent/> */}
+ 
+    {/* 
     <ShowResultComponent/> */}
+    {
+
+        SerachResult.map(element => {
+
+            return(
+                <ShowResultComponent Element={element.LegList.Leg}/>
+            )
+
+        })
+    }
     
     </>
   )
